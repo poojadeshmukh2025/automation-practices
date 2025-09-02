@@ -1,0 +1,41 @@
+<s:Envelope xmlns:s="http://schemas.xmlsoap.org/soap/envelope/">
+   <s:Header>
+      <EFSPHeader xmlns="urn:tyler:efm:services">
+         <EfspId>dd4971fe-cf67-4148-9e2b-9083cf8181fd</EfspId>
+         <Token>00000000-ABCD-ABCD-ABCD-000000000000</Token>
+      </EFSPHeader>
+      <UserNameHeader xmlns="urn:tyler:efm:services">
+         <UserName>automation.tylertest@mailinator.com</UserName>
+         <Password>97cedc64-c17b-4f5f-8fa2-ea3cd1257078</Password>
+      </UserNameHeader>
+   </s:Header>
+   <s:Body xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <GetCaseRequest xmlns="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/wrappers">
+         <caserequest:GetCaseRequestMessage xmlns:caserequest="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/caserequest" xmlns:ecf="https://docs.oasis-open.org/legalxml-courtfiling/ns/v5.0/ecf" xmlns:nc="http://release.niem.gov/niem/niem-core/4.0/" xmlns:j="http://release.niem.gov/niem/domains/jxdm/6.1/" xmlns:tylercommon="urn:tyler:ecf:v5.0:extensions:common">
+            <nc:DocumentIdentification/>
+            <ecf:SendingMDELocationID>
+               <nc:IdentificationID>https://filingassemblymde.com</nc:IdentificationID>
+            </ecf:SendingMDELocationID>
+            <ecf:ServiceInteractionProfileCode>urn:oasis:names:tc:legalxml-courtfiling:schema:xsd:WebServicesMessaging-5.0</ecf:ServiceInteractionProfileCode>
+            <j:CaseCourt>
+               <nc:OrganizationIdentification>
+                  <nc:IdentificationID>1</nc:IdentificationID>
+               </nc:OrganizationIdentification>
+            </j:CaseCourt>
+            <nc:DocumentPostDate>
+               <nc:DateTime>2025-06-30T10:21:10.127088Z</nc:DateTime>
+            </nc:DocumentPostDate>
+            <caserequest:CaseQueryCriteria>
+               <caserequest:CalendarEventTimeRange/>
+               <caserequest:IncludeCalendarEventIndicator>false</caserequest:IncludeCalendarEventIndicator>
+               <caserequest:IncludeDocketEntryIndicator>false</caserequest:IncludeDocketEntryIndicator>
+               <caserequest:IncludeParticipantsIndicator>true</caserequest:IncludeParticipantsIndicator>
+               <ecf:CaseTrackingID>
+                  <nc:IdentificationID>b5744308-f6bf-4000-b9f3-d6a813b66c9f</nc:IdentificationID>
+               </ecf:CaseTrackingID>
+               <j:CaseNumberText/>
+            </caserequest:CaseQueryCriteria>
+         </caserequest:GetCaseRequestMessage>
+      </GetCaseRequest>
+   </s:Body>
+</s:Envelope>
